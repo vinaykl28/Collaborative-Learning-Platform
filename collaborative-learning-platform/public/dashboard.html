@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CollabLearn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CollabLearn</div>
+            <ul class="nav-links">
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/whiteboard">Whiteboard</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h1 id="welcome-message">Welcome to Your Dashboard!</h1>
+        
+        <div class="group-actions">
+            <div class="create-group">
+                <h2>Create a New Group</h2>
+                <input type="text" id="groupName" placeholder="Group Name">
+                <button id="createGroupBtn">Create Group</button>
+                <div id="groupCodeDisplay" class="hidden"></div>
+            </div>
+            
+            <div class="join-group">
+                <h2>Join Existing Group</h2>
+                <input type="text" id="groupCodeInput" placeholder="Enter Group Code">
+                <button id="joinGroupBtn">Join Group</button>
+                <div id="joinStatus"></div>
+            </div>
+        </div>
+        
+        <div class="your-groups">
+            <h2>Your Groups</h2>
+            <div id="groupsList"></div>
+        </div>
+    </main>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>

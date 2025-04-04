@@ -1,0 +1,89 @@
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#welcome-message {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.group-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.create-group, .join-group {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.group-actions h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+.group-actions input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.group-actions button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.group-actions button:hover {
+    background-color: #27ae60;
+}
+
+#groupCodeDisplay {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.your-groups {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.group-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.group-item:last-child {
+    border-bottom: none;
+}
+
+.group-code {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
